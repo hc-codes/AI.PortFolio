@@ -160,7 +160,7 @@ export const WorkstationView = () => {
                      <div className="border border-cyan-500/30 p-6 bg-cyan-950/10 relative overflow-hidden">
                        <div className="absolute top-0 right-0 p-2 text-[10px] text-cyan-700">ID: #8492-A</div>
                        <h2 className="text-3xl text-white font-bold mb-2 glitch-text"><GlitchText text={PERSONAL_INFO.name} /></h2>
-                       <p className="text-cyan-400 mb-4">> {PERSONAL_INFO.role}</p>
+                       <p className="text-cyan-400 mb-4">{'>'} {PERSONAL_INFO.role}</p>
                        <p className="text-cyan-200/70 text-sm leading-relaxed max-w-lg">
                          {PERSONAL_INFO.summary}
                        </p>
@@ -190,7 +190,7 @@ export const WorkstationView = () => {
                         </div>
                         <div className="text-cyan-400 text-sm mb-2">{exp.company}</div>
                         <div className="text-cyan-200/60 text-xs space-y-2">
-                           {exp.description.map((d,j) => <div key={j}>> {d}</div>)}
+                           {exp.description.map((d,j) => <div key={j}>{'>'} {d}</div>)}
                         </div>
                       </div>
                     ))}
